@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: white;
+  transition: background 1.5s ease, color 1.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 90%;
+}
+
+h1 {
+  font-size: clamp(3rem, 12vw, 7rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+p#time-display {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* ─── Теми за часом доби ─── */
+body.morning {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f, #ff9a9e);
+  color: #2d2d2d;
+}
+
+body.day {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #1a3c5e;
+}
+
+body.evening {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #3d2b1f;
+}
+
+body.night {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #e0e7ff;
+}

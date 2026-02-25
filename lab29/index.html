@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Додавання елементів перед іншим</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Додай повідомлення</h1>
+
+    <form id="addForm">
+      <input 
+        type="text" 
+        id="messageInput" 
+        placeholder="Введи текст..." 
+        required
+      >
+      <button type="submit">Додати</button>
+    </form>
+
+
+    <button id="clearBtn" class="clear-button">Очистити всі дані</button>
+
+    <hr>
+
+    <ul id="messagesList">
+      <!-- сюди JS додаватиме нові <li> -->
+    </ul>
+
+    <div class="fixed-item">
+      Я не зрозумів що треба робити , тому просто додав можливість додавати повідомлення просто з сайту
+    </div>
+  </div>
+
+  <script src="Task1.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<button id="btn">Клікни один раз</button>
+<p id="msg"></p>
+
+<script>
+  document.getElementById('btn').addEventListener('click', function() {
+    document.getElementById('msg').textContent = "Виконано! Більше не реагуватиме.";
+    this.textContent = "Деактивовано";
+    this.disabled = true;
+  }, { once: true });
+</script>
